@@ -72,7 +72,7 @@ def create_post(current_user):
     db.session.add(new_post)
     db.session.commit()
 
-    return jsonify({'message': 'New post created!'})
+    return jsonify({'message': 'New post created!', 'id': new_post.id})
 
 @blog_bp.route('/blog', methods=['GET'])
 def get_all_posts():

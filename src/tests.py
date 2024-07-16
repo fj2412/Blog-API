@@ -51,8 +51,7 @@ class TestBlogAPI(unittest.TestCase):
         response = requests.post(url, json=data, headers=headers)
 
         self.assertEqual(200, response.status_code, f"Failed to create post: {response.json()}")
-        print(response.json())
-        self.post_id = response.json().get('post', {}).get('id')
+        self.post_id = response.json().get('id')
     def test_04_get_all_posts(self):
         url = self.base_url + '/blog'
         response = requests.get(url)
