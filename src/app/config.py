@@ -1,4 +1,9 @@
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
 class Config:
-    SECRET_KEY = 'thisissecret'
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///C:\\Users\\fengj\\Downloads\\sqlite-tools-win-x64-3460000\\blog.db'
-    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    SECRET_KEY = os.getenv('SECRET_KEY')
+    SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI')
+    SQLALCHEMY_TRACK_MODIFICATIONS = os.getenv('SQLALCHEMY_TRACK_MODIFICATIONS')
