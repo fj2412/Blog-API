@@ -5,7 +5,7 @@ This is a simple Blog API in python with unit test
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
-- [Setup Service](#Setup Service)
+- [Setup Service](#setupservice)
 
 ## Prerequisites
 First install on your machine:
