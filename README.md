@@ -1,6 +1,15 @@
 # Blog API Project
 
-This is a simple Blog API in python with unit test
+This is a simple Blog API in python with unit tests. This app is designed using SQLite database which
+is lightweight and serverless relational database management system. Its advantages are its fast and 
+easy to set up and ideal for simple projects. However, consequently its performance will be lacking if
+dataset become huge and complex. Also, for security practice, the app is designed using JWT which
+authenticate the user and authorize the api requests by the user. The downside of this design is that we
+need to ensure that the secret key is kept secret or else the request can be compromised. Some ideas to
+add on to this app may be to add a frontend user interface which can actually interact with the apis in a
+meaningful way. Also, I think using a framework with oauth2.0 is the more modern way to delegate user access
+to resources which may be something that can be improved and using another database like mysql if we want
+to scale the system as it become more complex.
 
 ## Table of Contents
 
@@ -27,7 +36,7 @@ Libraries to install:
 - python-dotenv
 
 ## Setup environment variable
-1. create a file named .env
+1. create a file named .env under **src** file
 2. Copy and paste the following into the file and edit the values as necessary
 
 ```bash
